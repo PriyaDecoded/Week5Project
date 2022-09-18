@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/33a61950ef.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col position-relative">
+          <p class="text-center text-muted mb-0" id="city"></p>
+          <p class="text-center text-muted mb-0" id="currentDate"></p>
+          <h1 class="text-center mb-0 ps-3" id="temperature"></h1>
+
+          <i class="fa-solid fa-sun position-absolute start-50 sunny"></i>
+          <h3 class="text-center fw-light">Sunny</h3>
+          <h6 class="text-center fw-light">High 26&#176; | Low 19&#176;</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid border-bottom border-top" style="width: 300px;">
+      <div class="row text-center">
+        <div class="col">
+          Now <br />
+          25&#176;
+        </div>
+        <div class="col">
+          6pm <br />
+          24&#176;
+        </div>
+        <div class="col">
+          7pm <br />
+          23&#176;
+        </div>
+        <div class="col">
+          8pm <br />
+          22&#176;
+        </div>
+        <div class="col">
+          9pm <br />
+          20&#176;
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2" style="width: 300px;">
+      <div class="row fw-bold">
+        <div class="col-6">Weekly Forecast</div>
+        <div class="col-5 text-end">Max / Min</div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="width: 300px;">
+      <div class="row">
+        <div class="col-6">Today</div>
+        <div class="col-6 text-end">25&#176; / 19&#176; &#9728;</div>
+      </div>
+    </div>
+    <div class="container-fluid" style="width: 300px;">
+      <div class="row">
+        <div class="col-6">Monday</div>
+        <div class="col-6 text-end">25&#176; / 19&#176; &#9728;</div>
+      </div>
+    </div>
+    <div class="container-fluid" style="width: 300px;">
+      <div class="row">
+        <div class="col-6">Tuesday</div>
+        <div class="col-6 text-end">25&#176; / 19&#176; &#x2601;</div>
+      </div>
+    </div>
+    <div class="container-fluid" style="width: 300px;">
+      <div class="row">
+        <div class="col-6">Wednesday</div>
+        <div class="col-6 text-end">25&#176; / 19&#176; &#x26c5;</div>
+      </div>
+    </div>
+    <div class="container-fluid" style="width: 300px;">
+      <div class="row">
+        <div class="col-6">Thursday</div>
+        <div class="col-6 text-end">25&#176; / 19&#176; &#x2601;</div>
+      </div>
+    </div>
+    <div class="container-fluid" style="width: 300px;">
+      <div class="row">
+        <div class="col-6">Friday</div>
+        <div class="col-6 text-end">25&#176; / 19&#176; &#x26c5;</div>
+      </div>
+    </div>
+    <div class="container-fluid" style="width: 300px;">
+      <div class="row">
+        <div class="col-6">Saturday</div>
+        <div class="col-6 text-end">25&#176; / 19&#176; &#9728;</div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2" style="width: 300px;">
+      <form id="search-form">
+        <div class="row text-center">
+          <div class="col-9">
+            <input type="search" placeholder="Change City.." id="city-input" />
+          </div>
+          <div class="col-3">
+            <input type="submit" value="Search" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>

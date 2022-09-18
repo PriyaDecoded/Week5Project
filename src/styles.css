@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+}
+.sunny {
+  z-index: -100;
+  color: rgb(250, 224, 184);
+  font-size: 72px;
+  top: 30%;
+}
+#cel-link {
+  font-size: smaller;
+  font-weight: lighter;
+}
+#fah-link {
+  font-size: smaller;
+  font-weight: lighter;
+}
